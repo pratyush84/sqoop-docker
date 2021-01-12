@@ -9,7 +9,7 @@ docker-compose.yaml file brings up two containers -
   
 To bring up the containers, follow below steps-
 1. Clone the repo
->git clone 
+>git clone https://github.com/pratyush84/sqoop-docker.git
 2. Open command prompt and navigate to the directory where repo is cloned.
 >docker-compose up
 
