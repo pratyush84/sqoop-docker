@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+    hadoop-server:
+        image: pratyush04/sqoop:latest
+        hostname: bigdata-master
+        stdin_open: true
+        tty: true
+        networks: 
+            - hadoop
+    
+    mysql-server:
+        image: mysql
+        container_name: mysql-host
+        networks:
+            - hadoop
+        environment:
+            - MYSQL_ROOT_PASSWORD=root
+networks:
+    hadoop:
+        driver: bridge
